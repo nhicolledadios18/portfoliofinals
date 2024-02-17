@@ -1,0 +1,105 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative; /* Set position to relative to allow absolute positioning within it */
+  background-image: url('22.png'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-position: center;
+  color: #000000;
+  padding: 250px 20px; /* Adjust the padding to make the header taller */
+}
+
+nav {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Background color with some transparency */
+  padding: 10px 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Add rounded corners for a softer look */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow for depth */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold; /* Make the text bold for better visibility */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.heading-box {
+  position: absolute;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  right: 20px; /* Adjust the distance from the right as needed */
+  background-color: rgba(255, 255, 255, 0.6); /* Background color with some transparency */
+  padding: 5px 10px; /* Adjust padding to make the box a perfect square */
+  width: 200px; /* Set the width */
+  height: 255px; /* Set the height to match the width */
+  border-radius: 10px; /* Add rounded corners for a softer look */
+}
+
+#about {
+  display: flex;
+  align-items: center; /* Align items vertically */
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align items vertically */
+}
+
+.about-text {
+  flex: 1; /* Take remaining space */
+  padding-right: 20px; /* Add space between text and image */
+}
+
+.about-image {
+  flex-shrink: 0; /* Prevent image from shrinking */
+  max-width: 100%; /* Set the maximum width of the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+#about h2 {
+  font-size: 55px; /* Adjust the font size as needed */
+  color: #0004ff; /* Adjust the color as needed */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  /* Add additional styles as needed */
+}
+
+
+
+/* Animated designs */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+.animated {
+  animation: slideIn 1s ease;
+}
